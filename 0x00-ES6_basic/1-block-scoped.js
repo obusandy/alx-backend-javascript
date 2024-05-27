@@ -1,8 +1,3 @@
-/*
- * modify the variables inside the function taskBlock
- *  the variables aren’t overwritten inside
- *  the conditional block.
- */
 
 
 export default function taskBlock(trueOrFalse) {
