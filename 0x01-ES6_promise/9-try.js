@@ -1,13 +1,13 @@
-/* This function should create and return an array named queue. */
+/* This function should create and return an array named queue */
 export default function guardrail(mathFunction) {
   const queue = [];
 
-	try {
-		queue.push(mathFunction());
-	} catch (err) {
-		queue.push(err.toString());
-	} finally {
-		queue.push('Guardrail was processed');
-	}
-	return queue;
+  try {
+    queue.push(mathFunction());
+  } catch (err) {
+    queue.push(err.toString());
+  } finally {
+    queue.push('Guardrail was processed');
+  }
+  return queue;
 }
