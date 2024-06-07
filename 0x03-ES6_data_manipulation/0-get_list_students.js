@@ -1,4 +1,3 @@
-/* Create a function named getListStudents */
 export default function getListStudents() {
   return [
     {
