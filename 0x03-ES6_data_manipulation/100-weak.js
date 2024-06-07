@@ -2,7 +2,6 @@
  * const instance of WeakMap
  */
 export const weakMap = new WeakMap();
-
 /**
  * Makes a query to an API
  * endpoint with rate limiting.
@@ -12,6 +11,7 @@ export const weakMap = new WeakMap();
  */
 export function queryAPI(endpoint) {
   if (!weakMap.has(endpoint)) {
+    // Initialize the call count
     weakMap.set(endpoint, 0);
   }
 
