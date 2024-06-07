@@ -6,6 +6,6 @@ export default function getStudentIdsSum(students) {
   if (!Array.isArray(students)) {
     return 0;
   }
-  const ids = getListStudentIds(students);
-  return ids.reduce((ttlsum, id) => ttlsum + id, 0);
+  const ttlids = getListStudentIds(students);
+  return ttlids.reduce((sum, id) => sum + id, 0);
 }
